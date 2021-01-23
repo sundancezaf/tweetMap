@@ -3,5 +3,5 @@ This is a GUI that takes a keywod and displays a map with markers of the locatio
 To run script uncomment line 454 or the startGui() function.
 
 APIS used (therefore appropiate API credentials needed):
-Twitter 
+Twitter and
 Google Maps Static
