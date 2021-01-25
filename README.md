@@ -1,5 +1,6 @@
 # tweetMap
-This is a GUI that takes a keywod and displays a map with markers of the locations of tweets containing that keyword.
+Allows the user to search tweets that match specific keyword and location. The program returns
+a map that contains markers for the locations of the tweets.
 To run script uncomment line 454 or the startGui() function.
 
 APIS used (therefore appropiate API credentials needed):
