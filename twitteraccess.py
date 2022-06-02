@@ -3,15 +3,14 @@ import json
 import requests
 from requests_oauthlib import OAuth1
 import sys
+from secrets import *
 sys.path.insert(0, './modulesForOauth')
+
 
 # The code in this file won't work until you set up your Twitter "app"
 # at https://dev.twitter.com/apps
 
-API_KEY = ""
-API_SECRET = ""
-ACCESS_TOKEN = ""
-ACCESS_TOKEN_SECRET = ""
+
 
 # Call this function after starting Python.  It creates a Twitter client object
 # (in variable client)that is authorized (based on your account credentials and
@@ -20,10 +19,7 @@ ACCESS_TOKEN_SECRET = ""
 
 def authTwitter():
     global client
-    client = OAuth1(API_KEY, API_SECRET,
-                    ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-
-
+    client = OAuth1(API_KEY, API_SECRET,ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 def searchTwitter(searchString, count=20, radius=2, latlngcenter=None):
     query = "https://api.twitter.com/1.1/search/tweets.json?q=" + \

@@ -5,9 +5,7 @@ from urllib.parse import urlencode, quote_plus
 import json
 import webbrowser
 from twitteraccess import *
-
-
-GOOGLEAPIKEY = ""
+from secrets import *
 
 authTwitter()
 
@@ -318,7 +316,7 @@ def initializeGUIetc():
     Globals.rootWindow = tkinter.Tk()
     Globals.rootWindow.title("DS11")
     choiceVar = tkinter.StringVar()
-    Globals.rootWindow.geometry("900x620")
+    Globals.rootWindow.geometry("1000x620")
     Globals.rootWindow.resizable(0, 0)
 
     # Frames utilized inside main frame to make design easier
@@ -451,4 +449,4 @@ def startGui():
 
 # Testing
 
-# startGui()
+startGui()
